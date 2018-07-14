@@ -5,20 +5,14 @@ class Header extends Component {
     return (
       <header>
         <div className="logo">
-            LOGO
+            <div><strike>WA</strike></div>
         </div>
 
         <nav>
             <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Products</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Work</li></a>
+                <a href="#"><li>Contact</li></a>
             </ul>
         </nav>    
       </header>

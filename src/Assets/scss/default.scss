@@ -1,1 +1,210 @@
 @import "_config.scss";
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 0px;
+    background-color: $white;
+    flex-direction: column;
+    position: fixed;
+
+    div.logo {
+        text-decoration: line-through;
+        border: 2px solid $husk;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        border-radius: 50%;
+        margin: 5px auto;
+
+        div {
+            margin: auto;
+            color: $husk;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        -webkit-padding-start: 0px;
+
+        a:first-of-type {
+            border-top: 1px solid rgba(0,0,0,0.2);
+        }
+        a {
+            text-decoration: none;
+            color: $green;
+
+            li {
+                text-align: center;
+                border-bottom: 1px solid rgba(0,0,0,0.2);
+           
+    
+    
+            }
+        }
+  
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0px 0px;
+        background-color: $white;
+        flex-direction: row;
+        position: fixed;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    
+        div.logo {
+            text-decoration: line-through;
+            border: 2px solid $husk;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            border-radius: 50%;
+            margin: 5px 0px;
+    
+            div {
+                margin: auto;
+                color: $husk;
+            }
+        }
+    
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            list-style-type: none;
+            -webkit-margin-before: 0em;
+            -webkit-margin-after: 0em;
+            -webkit-padding-start: 0px;
+            height: 100%;
+            margin-left: 40px;
+            
+    
+            a:first-of-type {
+                border-top: 0px solid rgba(0,0,0,0.2);
+            }
+            a {
+                text-decoration: none;
+                color: $green;
+                height: 100%;
+                border-bottom: 0px solid rgba(0,0,0,0.2);
+
+                display: flex;
+                padding: 0px 10px;
+                
+                
+    
+                li {
+                    text-align: center;
+                    border-bottom: 0px solid rgba(0,0,0,0.2);
+                    margin: auto 0px;
+
+               
+        
+        
+                }
+            }
+      
+        }
+    }
+}
+
+#wrapper{
+    display: grid;
+    grid-template-rows: auto auto auto 100px;
+}
+
+#home {
+    background-color: $green;
+    color:$yellow;
+    margin-top: 5vh;
+    padding-top: 40vh;
+
+    h1,
+    h2 {
+        text-align:center;
+        
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    div {
+        padding-top: 10vh;
+        display: flex;
+        a {
+            margin: 0px auto;
+            padding: 10vh 10vw;
+            i {
+                color: $yellow;
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+#work {
+    padding: 5vh 0;
+    border-top: 20px solid $brown; 
+    background-color: $white;
+
+    #workBox {
+        border: 2px solid $brown;
+        border-radius: 5px;
+        height: 50vh;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        margin: 10vh auto;
+
+        h2 {
+            padding: 10px 0px;
+            margin: 0px auto;
+        }
+
+        img {
+            height: auto;
+            width: 80vw;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            margin: 0px auto;
+            -webkit-padding-start: 0px;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0px 10px;
+
+                i {
+                    margin: 5px auto;
+                }
+
+
+            }
+        }
+    }
+}
