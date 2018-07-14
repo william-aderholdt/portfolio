@@ -5,7 +5,9 @@ import './Assets/css/default.min.css';
 import Footer from './components/footerComponent/footer';
 import Header from './components/headerComponent/header';
 import Homepage from './components/pages/homePage';
-import Work from './components/pages/work'
+import Work from './components/pages/work';
+import Testimonial from './components/pages/testimonial';
+import Contact from './components/pages/contact';
 
 class App extends Component {
   render() {
@@ -16,6 +18,8 @@ class App extends Component {
           <Header />
           <Homepage />
           <Work />
+          <Testimonial />
+          <Contact />
           <Footer />
         </div>
       </div>

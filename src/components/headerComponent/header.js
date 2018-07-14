@@ -12,6 +12,7 @@ class Header extends Component {
             <ul>
                 <a href="#"><li>About</li></a>
                 <a href="#"><li>Work</li></a>
+                <a href="#"><li>Testimonials</li></a>
                 <a href="#"><li>Contact</li></a>
             </ul>
         </nav>    
